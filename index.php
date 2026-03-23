@@ -1,20 +1,35 @@
 <?php
 $pageTitle = "Home | Oma's Kost";
-include 'includes/header.php';
 ?>
 
-<main>
- <section class="hero">
-    <div class="container hero-grid">
-        <div>
-            <h1>Heerlijk Hollands Eten</h1>
-            <p>Sinds 1985 in Rotterdam</p>
-            <a href="reserveren.php" class="btn">Reserveer nu</a>
-        </div>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anass Maliki">
+    <meta name="description" content="Oma's Kost - Heerlijk Hollands eten in een warme sfeer.">
+    <title><?php echo $pageTitle; ?></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
 
-        <img src="images/hero.jpg" alt="Traditioneel Hollands gerecht">
-    </div>
-</section>
+<?php include 'includes/header.php'; ?>
+
+<main>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>Heerlijk Hollands Eten</h1>
+                <p>Sinds 1985 in Rotterdam</p>
+                <a href="reserveren.php" class="btn">Reserveer nu</a>
+            </div>
+
+            <img src="images/hero.jpg" alt="Traditioneel Hollands gerecht">
+        </div>
+    </section>
 
     <section class="about section">
         <div class="container about-grid">
@@ -37,13 +52,17 @@ include 'includes/header.php';
             <h2>Onze gerechten</h2>
 
             <div class="gallery-grid">
-               <img src="images/gerecht-5.jpg" alt="Stamppot van Oma's Kost">
+                <img src="images/gerecht-5.jpg" alt="Stamppot van Oma's Kost">
                 <img src="images/gerecht-6.jpg" alt="Pannenkoek van Oma's Kost">
                 <img src="images/gerecht-3.jpg" alt="Erwtensoep van Oma's Kost">
                 <img src="images/gerecht-4.jpg" alt="Hollands gerecht">
             </div>
         </div>
     </section>
+
 </main>
 
 <?php include 'includes/footer.php'; ?>
+
+</body>
+</html>
